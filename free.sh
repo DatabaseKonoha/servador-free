@@ -33,6 +33,6 @@ echo "[*] : Injecting AimLock..."
 echo ""
 echo "-------------------------------------------------------------------------------------"
 echo ""
-unzip /sdcard/REGEM/Bin/kzx.img -d /sdcard/Android/Data > /dev/null 2>&1
+unzip /sdcard/KazuXitado/Bin/kzx.img -d /sdcard/Android/Data > /dev/null 2>&1
     am start -a android.intent.action.VIEW -d ${source}> /dev/null 2>&1
 fi
