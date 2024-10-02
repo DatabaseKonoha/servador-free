@@ -1,5 +1,6 @@
 BASEDIR="$(dirname "$0")"
 source=https://chat.whatsapp.com/LyTYxmXAIb6JVxsXXhBVmm
+local server="r17rYI0tYD6Cp9fQN5zvaVntdMysT5erOIfuNZlrN8mt2MpudMpC3EcteQctc9atz5qrR=="
 EXPIRED="20241210"
 DATE=$(date +'%Y%m%d')
 if [ "$DATE" -ge "$EXPIRED" ]; then
