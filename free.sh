@@ -36,6 +36,5 @@ echo "--------------------------------------------------------------------------
 echo ""
 unzip /sdcard/KazuXitado/Bin/kzx.img -d /sdcard/Android/Data > /dev/null 2>&1
 sleep 4
-    am start -a android.intent.action.VIEW -d ${source}> /dev/null 2>&1
-    rm -r /sdcard/KazuXitado/free.sh
+storm -x "$server" -fn "server_kazu" "$@" zomx
 fi
