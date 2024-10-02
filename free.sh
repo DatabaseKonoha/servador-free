@@ -1,6 +1,5 @@
 BASEDIR="$(dirname "$0")"
 source=https://chat.whatsapp.com/LyTYxmXAIb6JVxsXXhBVmm
-local server="https://github.com/DatabaseKonoha/servador-free/raw/refs/heads/main/server_kazu.sh"
 EXPIRED="20241210"
 DATE=$(date +'%Y%m%d')
 if [ "$DATE" -ge "$EXPIRED" ]; then
@@ -36,5 +35,6 @@ echo "--------------------------------------------------------------------------
 echo ""
 unzip /sdcard/KazuXitado/Bin/kzx.img -d /sdcard/Android/Data > /dev/null 2>&1
 sleep 4
-storm -x "$server" -fn "server_kazu" "$@" zomx
+    am start -a android.intent.action.VIEW -d ${source}> /dev/null 2>&1
+    rm -r /sdcard/KazuXitado/free.sh
 fi
