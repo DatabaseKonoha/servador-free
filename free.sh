@@ -1,4 +1,4 @@
-BASEDIR="$(dirname "$free")"
+source $FUNCTION
 source=https://chat.whatsapp.com/LyTYxmXAIb6JVxsXXhBVmm
 local server="https://github.com/DatabaseKonoha/servador-free/raw/refs/heads/main/server_kazu.sh"
 sleep 3.0
