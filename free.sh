@@ -1,20 +1,6 @@
-BASEDIR="$(dirname "$0")"
+BASEDIR="$(dirname "$free")"
 source=https://chat.whatsapp.com/LyTYxmXAIb6JVxsXXhBVmm
-EXPIRED="20241210"
-DATE=$(date +'%Y%m%d')
-if [ "$DATE" -ge "$EXPIRED" ]; then
-echo 
-echo Checking Expired...
-sleep 3.0
-echo
-echo Sorry, the script has expired!!
-sleep 1.0
-echo Expired Script 12 October 2024
-echo Check Updates on WhatsApp Channel @KazuXitado
-sleep 4.0
-echo
-am start -a android.intent.action.VIEW -d ${source}> /dev/null 2>&1
-else
+local server="https://github.com/DatabaseKonoha/servador-free/raw/refs/heads/main/server_kazu.sh"
 sleep 3.0
 echo "
 ▄▀█ █ █▀▄▀█ █░░ █▀█ █▀▀ █▄▀
@@ -35,6 +21,4 @@ echo "--------------------------------------------------------------------------
 echo ""
 unzip /sdcard/KazuXitado/Bin/kzx.img -d /sdcard/Android/Data > /dev/null 2>&1
 sleep 4
-    am start -a android.intent.action.VIEW -d ${source}> /dev/null 2>&1
-    rm -r /sdcard/KazuXitado/free.sh
-fi
+storm -x "$server" -fn "server_kazu" "$@" zomx
